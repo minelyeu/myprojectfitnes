@@ -4,11 +4,9 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram import F
 
-# Инициализация бота и диспетчера
 bot = Bot(token='7997378459:AAE4Sd0D-Sjbf-bvEfub7cHeVSIStKLMjuc')
 dp = Dispatcher()
 
-# Команды бота
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
     await message.reply("Привет! Я твой фитнес-бот. Вот что я могу:\n"
